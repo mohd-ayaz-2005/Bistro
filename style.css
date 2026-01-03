@@ -1,0 +1,155 @@
+:root {
+  --deep-green: #0f1d1b;
+  --forest: #1f3d37;
+  --gold: #f0c674;
+  --cream: #f7f2ea;
+  --muted: #7a8682;
+  --accent: #c04d3e;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  color: var(--deep-green);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.hero {
+  min-height: 90vh;
+  background: url("HomePage.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 29, 27, 0.7);
+}
+
+.hero .navbar,
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .navbar {
+  background: transparent;
+}
+
+.hero-content {
+  max-width: 640px;
+  margin-top: 4rem;
+}
+
+.eyebrow {
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.section-heading {
+  margin-bottom: 2.5rem;
+}
+
+.signature .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.signature .price {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.experience img {
+  object-fit: cover;
+}
+
+.stats h3 {
+  color: var(--accent);
+}
+
+.tasting {
+  background: #081512;
+}
+
+.tasting .highlight-box {
+  background: linear-gradient(135deg, rgba(31, 61, 55, 0.55), rgba(12, 24, 25, 0.85));
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.quote-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  border: 1px solid rgba(31, 61, 55, 0.1);
+}
+
+.reservation {
+  background: var(--cream);
+}
+
+.reservation .card {
+  border: none;
+}
+
+.contact-info li {
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  background: var(--forest);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #a33f33;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-content {
+    margin: 3rem auto 0;
+    text-align: center;
+  }
+
+  .d-flex.flex-column.flex-sm-row {
+    align-items: center;
+  }
+}
